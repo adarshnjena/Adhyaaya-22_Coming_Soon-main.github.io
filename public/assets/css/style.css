@@ -80,7 +80,7 @@ a {
 .mobile-logo {
   display: none;
   width: 230px;
-  margin: 70px;
+  margin: 0px 70px 40px 70px;
 }
 /****************** Logo End ******************/
 
@@ -130,10 +130,10 @@ a {
 /****************** MainContainer ******************/
 .maincontainer {
   display: flex;
-  justify-content: space-between;
 }
 
 /*** Eastereggs ***/
+
 .eastereggs video {
   position: relative;
   margin: 95px 0px 20px 175px;
@@ -273,9 +273,9 @@ a {
   position: relative;
   color: #fff;
   text-align: center;
-  right: 10%;
-  top: 205px;
+  top: 123px;
   display: flex;
+  margin-left: 160px;
 }
 .maintitle2 {
   position: relative;
@@ -290,6 +290,7 @@ a {
   align-items: center;
   padding-right: 30px;
 }
+
 .message {
   position: absolute;
   width: 300px;
@@ -302,13 +303,50 @@ a {
   padding-bottom: 30px;
 }
 
+#catch {
+  font-family: rogueland_slabbold;
+  font-size: 1.4em;
+  font-weight: 100;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.maintitle a h2 u,
+.maintitle2 a h2 u {
+  color: aqua;
+  font-family: revampedregular;
+  font-size: 1.5em;
+  font-weight: 100;
+}
 .maintitle a h2,
 .maintitle2 a h2 {
   color: aqua;
   font-family: revampedregular;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+
+.maintitle a h2:hover u,
+.maintitle2 a h2:hover u {
+  color: #f16eab;
+}
+.maintitle a h2:hover,
+.maintitle2 a h2:hover {
+  color: #f16eab;
+}
+
+.maintitle2 p,
+.maintitle p {
+  position: relative;
+  color: white;
+  font-family: rogueland_slabbold;
+  font-size: 1.5em;
   font-weight: 100;
   padding-bottom: 40px;
+}
+.live {
+  font-family: rogueland_slabbold;
 }
 
 .footer-sco a {
@@ -322,6 +360,7 @@ a {
 .footer-sco a:hover {
   color: aqua;
 }
+
 /*** Titles END ***/
 
 /****************** MainContainer END ******************/
@@ -377,11 +416,61 @@ a {
   }
 }
 @media screen and (max-width: 1000px) {
+  body {
+    margin: 0px;
+  }
   .eastereggs video {
     width: 100%;
   }
   .expand {
     display: none;
+  }
+  body {
+    background: url("../img/bg3.png");
+    background-size: cover;
+  }
+  .square1,
+  .square2,
+  .mascot,
+  .alogo {
+    display: none;
+  }
+  .card77 {
+    position: relative;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .pole1 {
+    position: relative;
+    background: #f16eab;
+    width: 2px;
+    height: 80px;
+    top: 0px;
+    left: 50px;
+  }
+  .pole2 {
+    position: relative;
+    background: #f16eab;
+    width: 2px;
+    height: 80px;
+    top: 0px;
+    left: 200px;
+  }
+
+  .maincard {
+    height: 107px;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: 29px;
+    right: 0px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 826px) {
@@ -408,6 +497,44 @@ a {
   }
   .eastereggs video {
     width: 100%;
+  }
+  .maintitle a h2 u,
+  .maintitle2 a h2 u {
+    color: aqua;
+    font-family: revampedregular;
+    font-size: 1.1em;
+    font-weight: 100;
+  }
+
+  .maintitle a h2,
+  .maintitle2 a h2 {
+    color: aqua;
+    font-family: revampedregular;
+    font-size: 1.9em;
+    font-weight: 100;
+    padding-bottom: 20px;
+    padding-top: 25px;
+  }
+
+  .maintitle2 p,
+  .maintitle p {
+    position: relative;
+    color: white;
+    font-family: rogueland_slabbold;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 40px;
+  }
+
+  .footer-sco a {
+    position: relative;
+    text-align: right;
+    color: #fff;
+    font-size: 2em;
+    margin: 20px 10px 20px 10px;
+  }
+  #catch {
+    margin: 12px;
   }
 }
 /****************** Responsive END *****************/
