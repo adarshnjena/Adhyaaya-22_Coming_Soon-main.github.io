@@ -222,6 +222,7 @@ a {
   position: relative;
   left: 612px;
   bottom: 12px;
+  display: block;
 }
 
 /** Expand Video **/
@@ -240,6 +241,7 @@ a {
 .termspop_content {
   background: #000;
   width: 100vw;
+  height: 100vh;
   position: relative;
   z-index: 13;
   overflow: hidden;
@@ -286,6 +288,7 @@ a {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding-right: 30px;
 }
 .message {
   position: absolute;
@@ -373,6 +376,14 @@ a {
     display: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  .eastereggs video {
+    width: 100%;
+  }
+  .expand {
+    display: none;
+  }
+}
 @media screen and (max-width: 826px) {
   body {
     background: url("../img/bg3.png");
@@ -397,9 +408,6 @@ a {
   }
   .eastereggs video {
     width: 100%;
-  }
-  .titlecontent {
-    padding-right: 10px;
   }
 }
 /****************** Responsive END *****************/

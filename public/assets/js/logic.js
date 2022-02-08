@@ -11,9 +11,8 @@ VanillaTilt.init(document.querySelectorAll(".maincard"), {
 });
 
 //? Expand
-function expand() {
-  document.getElementById("loopvideo").style.width = "100vw";
-  document.getElementById("loopvideo").style.height = "100vh";
+function Expand() {
+  document.getElementById("termspop").style.display = "block";
 }
 
 //? Mascot ASU-77
